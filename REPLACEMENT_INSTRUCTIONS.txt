@@ -1,0 +1,25 @@
+=== Razorpay API Key Kaise Change Kare (Hinglish Guide) ===
+
+Agar aapko bhavishya mein Razorpay API Key badalni hai, toh niche diye gaye steps follow karein:
+
+1. WEBSITE KE LIYE:
+   - File Path: siyte/script.js
+   - Line Number: 21 (approx)
+   - Kya badalna hai: 
+     const RAZORPAY_KEY_ID = 'xx'; 
+     (Yahan 'xx' ki jagah apni nayi key dalein)
+
+2. MOBILE APP KE LIYE:
+   - File Path: rechragreapp/cordova_app/www/app.js
+   - Line Number: 101 (approx)
+   - Kya badalna hai: 
+     let razorpayKeyId = "xx";
+     (Yahan "xx" ki jagah apni nayi key dalein)
+
+3. LIVE UPDATE:
+   - Badlav karne ke baad, changes ko live karne ke liye terminal mein ye command chalayein:
+     git add -A
+     git commit -m "Updated Razorpay Key"
+     git push -u origin master
+
+Agar kuch samajh na aaye toh Sachin (Developer) se contact karein.
